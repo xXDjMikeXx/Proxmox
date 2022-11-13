@@ -62,3 +62,6 @@ if nc -zw1 8.8.4.4 443; then msg_ok "8.8.4.4 Connected"; else
  fi
 
 echo "Fertig"
+
+
+
