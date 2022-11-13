@@ -49,7 +49,7 @@ sleep 1
 if nc -zw1 1.1.1.1 443; then msg_ok "1.1.1.1 Connected"; else
    msg_error "1.1.1.1 NOT Connected"
  fi
-
+sleep 1
 echo "Test 2"
 sleep 1
  
