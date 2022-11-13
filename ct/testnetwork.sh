@@ -52,7 +52,7 @@ if nc -zw1 1.1.1.1 443; then msg_ok "1.1.1.1 Connected"; else
 echo "Test 2"
  
 if nc -zw1 8.8.8.8 443; then msg_ok "8.8.8.8 Connected"; else
-   msg_error "1.1.1.1 NOT Connected"
+   msg_error "8.8.8.8 NOT Connected"
  fi
 
 echo "Test 3"
