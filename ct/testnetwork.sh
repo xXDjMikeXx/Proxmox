@@ -44,27 +44,27 @@ function msg_error() {
 }
 
 echo "Test 1"
-sleep 2
+sleep 1
 
 if nc -zw1 1.1.1.1 443; then msg_ok "1.1.1.1 Connected"; else
    msg_error "1.1.1.1 NOT Connected"
  fi
 
 echo "Test 2"
-sleep 2
+sleep 1
  
 if nc -zw1 8.8.8.8 443; then msg_ok "8.8.8.8 Connected"; else
    msg_error "8.8.8.8 NOT Connected"
  fi
-
+sleep 1
 echo "Test 3"
-sleep 2
+sleep 1
 
 if nc -zw1 8.8.4.4 443; then msg_ok "8.8.4.4 Connected"; else
    msg_error "1.1.4.4 NOT Connected"
  fi
-
+sleep 1
 echo "Fertig"
-sleep 5
+sleep 1
 
 
