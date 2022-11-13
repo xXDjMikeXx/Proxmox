@@ -61,7 +61,7 @@ echo "Test 3"
 sleep 1
 
 if nc -zw1 8.8.4.4 443; then msg_ok "8.8.4.4 Connected"; else
-   msg_error "1.1.4.4 NOT Connected"
+   msg_error "8.8.4.4 NOT Connected"
  fi
 sleep 1
 echo "Fertig"
