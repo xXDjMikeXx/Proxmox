@@ -44,7 +44,7 @@ function msg_error() {
 }
 
 
-if nc -zw1 8.8.8.8 443; then msg_ok "Internet Connected"; else
+if nc -zw1 1.1.1.1 443; then msg_ok "Internet Connected"; else
    msg_error "Internet NOT Connected"
    exit 1
  fi
