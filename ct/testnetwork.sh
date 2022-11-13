@@ -43,13 +43,22 @@ function msg_error() {
   echo -e "${BFR} ${CROSS} ${RD}${msg}${CL}"
 }
 
+echo "Test 1"
 
 if nc -zw1 1.1.1.1 443; then msg_ok "1.1.1.1 Connected"; else
    msg_error "1.1.1.1 NOT Connected"
  fi
+
+echo "Test 2"
+ 
 if nc -zw1 8.8.8.8 443; then msg_ok "8.8.8.8 Connected"; else
    msg_error "1.1.1.1 NOT Connected"
  fi
+
+echo "Test 3"
+
 if nc -zw1 8.8.4.4 443; then msg_ok "8.8.4.4 Connected"; else
    msg_error "1.1.4.4 NOT Connected"
  fi
+
+echo "Fertig"
